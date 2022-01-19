@@ -4,8 +4,11 @@ function writeDate() {
 		weekday: 'long',
 		month: 'long',
 		day: 'numeric',
+		hour: 'numeric',
+		minute: 'numeric',
 		hour12: true
 	});
+
 	const dateEl = document.getElementById('date');
 	dateEl.textContent = formatter.format(today);
 }
